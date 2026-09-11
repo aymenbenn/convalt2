@@ -1,0 +1,41 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0d1418;
+}
+body {
+  background-color: #0d1418;
+  color: #ece9e4;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+/* Subtle, unobtrusive scrollbar so the cinematic flow is not framed by chrome */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0b0d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 233, 228, 0.28);
+  border-radius: 999px;
+}
+/* Text legibility over moving imagery: a soft shadow keeps copy readable
+   without adding a visible panel that would break immersion. */
+.cine-text {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.72), 0 6px 28px rgba(0, 0, 0, 0.5);
+}
+:focus-visible {
+  outline: 2px solid #c99a54;
+  outline-offset: 3px;
+}
